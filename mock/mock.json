@@ -1,0 +1,41 @@
+{
+    "routes": [{
+        "name": "list",
+        "endpoint": "/:Int/list",
+        "template": "list",
+        "async": false
+    }, {
+        "name": "get_some",
+        "endpoint": "/api/get_some/",
+        "async": true
+    }
+],
+    "data": {
+        "get_some": {
+            "token": "haha",
+            "result": [{
+                "class": "一般",
+                "expend": 23
+            }, {
+                "class": "出行",
+                "expend": 23
+            }, {
+                "class": "娱乐",
+                "expend": 11
+            }, {
+                "class": "总和",
+                "expend": 88
+            }, {
+                "class": "教育",
+                "expend": 9
+            }, {
+                "class": "服饰",
+                "expend": 23
+            }, {
+                "class": "饮食",
+                "expend": 43
+            }]
+        }
+    }
+
+}

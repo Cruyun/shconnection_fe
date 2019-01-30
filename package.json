@@ -1,0 +1,57 @@
+{
+  "name": "shconnection_fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ninja start",
+    "build": "rm -rf ./dist/* && node ./build/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cruyun/shconnection_fe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cruyun/shconnection_fe/issues"
+  },
+  "homepage": "https://github.com/Cruyun/shconnection_fe#readme",
+  "dependencies": {
+    "echarts": "^4.0.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "swig": "^1.4.2",
+    "uglify-js": "^2.8.12",
+    "vue": "^2.5.16",
+    "webpack-merge": "^4.1.2",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "babel-register": "^6.0.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.10.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "url-loader": "^0.5.8",
+    "vue-loader": "^11.0.0",
+    "vue-template-compiler": "^2.1.10",
+    "webpack": "^2.4.1",
+    "webpack-bundle-analyzer": "^2.8.2",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.18.0",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
