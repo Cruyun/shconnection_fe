@@ -47,7 +47,7 @@ export default {
 		if (window.location.pathname.split('/')[2]) 
 			this.data = window.location.pathname.split('/')[2];
 
-		fetch('/api/chart/test/', {
+		fetch('/api/chart/', {
 			headers: {
 				'Content-Type': 'application/json',
 				'token': this.data
