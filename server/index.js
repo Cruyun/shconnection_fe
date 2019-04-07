@@ -16,6 +16,11 @@ router.get("/chart/:id/", function(ctx, next) {
   ctx.body = template({});
 });
 
+router.get("/kmeans/", function(ctx, next) {
+  let template = swig.compileFile(path.resolve(templateRoot, "chart.html"));
+  ctx.body = template({});
+});
+
 router.get(/^\/static(?:\/|$)/, async ctx => {
   let filepath = ctx.path.replace(/static\//, "");
   await send(ctx, filepath, {

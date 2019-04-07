@@ -14,6 +14,7 @@ function resolve(dir) {
 module.exports = {
     entry: {
         'list': ['./src/list.js'],
+        'chart': ['./src/chart.js']
         // vendor: ["vue", "whatwg-fetch"]
     },
     output: {
@@ -86,6 +87,13 @@ module.exports = {
             inject: false,
             template: path.join(__dirname, '../template/list.ejs'),
             chunks: ['list']
+        }),
+        new HtmlWebpackPlugin({
+            alwaysWriteToDisk: true,
+            filename: 'template/chart.html',
+            inject: false,
+            template: path.join(__dirname, '../template/chart.ejs'),
+            chunks: ['chart']
         }),
         new HtmlWebpackHarddiskPlugin()
     ]
